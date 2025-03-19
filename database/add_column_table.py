@@ -9,7 +9,7 @@ try:
     cur = conn.cursor()
 
     # Spalte "age" zur Tabelle "players" hinzufügen
-    cur.execute("ALTER TABLE players ADD COLUMN age INTEGER")
+    cur.execute("ALTER TABLE bars ADD COLUMN brewery INTEGER")
 
     # Änderungen speichern und Verbindung schließen
     conn.commit()
