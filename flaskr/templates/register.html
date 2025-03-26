@@ -150,44 +150,46 @@
     <!-- partial:index.partial.html -->
 
     <section>
-      <div class="signin">
-        <div class="content">
-          <h2>Sign In</h2>
+      <form action="PODT">
+        <div class="signin">
+          <div class="content">
+            <h2>Sign In</h2>
 
-          <div class="form">
-            <div class="inputBox">
-              <input type="text" required /> <i>Username</i>
-            </div>
+            <div class="form">
+              <div class="inputBox">
+                <input type="text" required /> <i>Username</i>
+              </div>
 
-            <div class="inputBox">
-              <input type="password" required /> <i>Password</i>
-            </div>
+              <div class="inputBox">
+                <input type="password" required /> <i>Password</i>
+              </div>
 
-
-            <div class="inputBox">
-              <!-- <input type="submit" value="Login" /> -->
-               <!-- Mock login to produce routing -->
-              <a
-                href="{{ url_for('index') }}"
-                style="
-                  color: black;
-                  text-decoration: none;
-                  background-color: #0f0;
-                  display: block;
-                  padding: 10px;
-                  border-radius: 4px;
-                  text-align: center;
-                  font-weight: 600;
-                  font-size: 1.35em;
-                  letter-spacing: 0.05em;
-                "
-              >
-                Register
-              </a>
+              <div class="inputBox">
+                <!-- <input type="submit" value="Login" /> -->
+                <!-- Mock login to produce routing -->
+                <button
+                type="submit"
+                  href="{{ url_for('index') }}"
+                  style="
+                    color: black;
+                    text-decoration: none;
+                    background-color: #0f0;
+                    display: block;
+                    padding: 10px;
+                    border-radius: 4px;
+                    text-align: center;
+                    font-weight: 600;
+                    font-size: 1.35em;
+                    letter-spacing: 0.05em;
+                  "
+                >
+                  Register
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </section>
     <!-- partial -->
   </body>
